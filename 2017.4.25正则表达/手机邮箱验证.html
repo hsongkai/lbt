@@ -18,16 +18,29 @@
 
 
 
-       var  reg=/^\w+@\w+\.[a-z]{2,4}$/
-       var  str=prompt("请输入邮箱")
-       if(reg.test(str)){
-       	alert("邮箱验证成功")
-       	
-       }else{
-       	alert("请输入正确的邮箱")
-       }
-       
-       
+//     var  reg=/^\w+@\w+\.[a-z]{2,4}$/
+//     var  str=prompt("请输入邮箱")
+//     if(reg.test(str)){
+//     	alert("邮箱验证成功")
+//     	
+//     }else{
+//     	alert("请输入正确的邮箱")
+//     }
 
+       //去空格
+//      var   str="s   t  a  "
+//      console.log(str.replace(/\s+/g,"")) //replace替换
+//     
+
+               //函数去空格
+          var  str="  sadasd.dsada ";
+          var  str2=" sadsad dsadsa ";
+          String.prototype.trim=function(){
+          	return this.replace(/\s+/g)
+          }
+          console.log(str.trim());
+          console.log(str2.trim());
+             
+             
 	</script>
 </html>
