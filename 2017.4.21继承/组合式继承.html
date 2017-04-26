@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		
+		function Op(name,asd){
+			this.name=name;
+			this.asd=asd;
+		}
+		
+		function Or(name,asd,as){
+			Op.apply(this,[name,asd])
+			this.as=as;
+		}
+		Or.prototype=new Op();  //原型指向Op
+		
+		
+		var mar=new Or("wo",22,"sss")
+		console.log(mar.constructor)
+		console.log(mar.__proto__)
+		
+		console.log(mar.asd)
+		
+		
+	</script>
+</html>

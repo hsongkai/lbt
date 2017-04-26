@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+	 function   Pr(name,age){
+	 	//初始化
+	 	this.name=name;
+	 	this.age=age;
+	 }
+     function   Or(name,age,sex){
+     	Pr.apply(this,[name,age])
+     	this.sex=sex;
+     }
+	  var  To=new Or("wo",22,"nan")
+	  
+	  console.log(To.constructor)//constructor指向构造函数Or
+	  console.log(To.sex)
+		 
+		//  优点：
+        //  解决了子类实例共享父类引用属性问题
+        // 缺点：
+        // 无法实现函数复用，每个子类实例都持有一个新的函数，太多了就会影响性能。
+	</script>
+</html>
