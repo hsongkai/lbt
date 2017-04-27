@@ -33,14 +33,31 @@
 //     
 
                //函数去空格
-          var  str="  sadasd.dsada ";
-          var  str2=" sadsad dsadsa ";
-          String.prototype.trim=function(){
-          	return this.replace(/\s+/g)
-          }
-          console.log(str.trim());
-          console.log(str2.trim());
-             
-             
+//        var  str="  sadasd.dsada ";
+//        var  str2=" sadsad dsadsa ";
+//        String.prototype.trim=function(){
+//        	return this.replace(/\s+/g)
+//        }
+//        console.log(str.trim());
+//        console.log(str2.trim());
+
+
+                //老办法提取数字
+//        var str="jintianshi2017nian5yue26hao"
+//          b="";
+//          for(var i=0;i<str.length;i++){
+//          	if(str.charAt(i)<='9'&&str.charAt(i)>=0){
+//          		b+=str.charAt(i)
+//          	}
+//          }
+//           return b
+      
+            //正则提取数字
+//       var str="jintianshi2017nian5yue26hao"；
+//       function tiqu(str){
+//       return str.match(/\d+/g);
+//       }
+//     console.log(tiqu(str))
+
 	</script>
 </html>
